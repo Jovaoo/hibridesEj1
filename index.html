@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>Login mdual</title> 
+  <link rel="stylesheet" href="./css/index.css"> 
+  <script src="./js/index.js"></script>
+ </head> 
+ <body> <!-- partial:index.partial.html --> 
+  <section>
+    <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
+    <div class="signin" id="login"> 
+        <div class="content"> 
+            <h2>Login</h2> 
+            <div class="form"> 
+                <div class="inputBox"> 
+                    <input type="text" id="username" required> <i>Usuario</i> 
+                </div> 
+                <div class="inputBox"> 
+                    <input type="password" id="password" required> <i>Contraseña</i> 
+                </div> 
+                <div class="inputBox"> 
+                    <input type="submit" value="Entrar" onclick="check_login()"> 
+                </div>
+                <div class="links">
+                    <a href="#" onclick="changeVisibilityUserForm()">Regístrate!</a> 
+                </div>
+                <p id="loginCorrecto" style="display:none">¡Login Correcto!</p> 
+                <p id="loginIncorrecto" style="display:none">¡Login incorrecto!</p> 
+            </div> 
+        </div> 
+    </div> 
+
+    <div class="signin" id="register" style="display: none;"> 
+        <div class="content"> 
+            <h2>Registro</h2> 
+            <div class="form">
+                <div class="inputBox"> 
+                    <input type="email" id="emailReg" required> <i>Email</i> 
+                </div>  
+                <div class="inputBox"> 
+                    <input type="text" id="usernameReg" required> <i>Usuario</i> 
+                </div> 
+                <div class="inputBox"> 
+                    <input type="password" id="passwordReg" required> <i>Contraseña</i> 
+                </div> 
+                <div class="inputBox"> 
+                    <input type="submit" value="Registrate" onclick="registerUser()"> 
+                </div>
+                <div class="links">
+                    <a href="#" onclick="changeVisibilityUserForm()">Entra con tu usuario</a> 
+                </div>
+                <p id="registroCorrecto" style="display:none">¡Te has registrado correctamente!</p> 
+            </div> 
+        </div> 
+    </div> 
+    
+  </section> <!-- partial --> 
+
+ </body>
+
+</html>
